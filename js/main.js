@@ -177,7 +177,7 @@
                 var children = el.querySelectorAll('.section-label, .section-heading, .section-description');
                 if (children.length > 0) {
                     gsap.from(children, {
-                        opacity: 0, y: 30, duration: 0.7, stagger: 0.15,
+                        y: 30, duration: 0.7, stagger: 0.15,
                         ease: 'power3.out',
                         scrollTrigger: { trigger: sel, start: 'top 85%', toggleActions: 'play none none none' }
                     });
@@ -188,7 +188,7 @@
             var skillEls = gsap.utils.toArray('.skill-card');
             if (skillEls.length > 0) {
                 gsap.from(skillEls, {
-                    opacity: 0, y: 40, duration: 0.6, stagger: 0.08,
+                    y: 40, duration: 0.6, stagger: 0.08,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.skills-grid', start: 'top 80%', toggleActions: 'play none none none' }
@@ -199,7 +199,7 @@
             var statEls = gsap.utils.toArray('.stat-card');
             if (statEls.length > 0) {
                 gsap.from(statEls, {
-                    opacity: 0, y: 40, duration: 0.6, stagger: 0.12,
+                    y: 40, duration: 0.6, stagger: 0.12,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.about-stats', start: 'top 80%', toggleActions: 'play none none none' }
@@ -210,7 +210,7 @@
             var timelineEls = gsap.utils.toArray('.timeline-card');
             if (timelineEls.length > 0) {
                 gsap.from(timelineEls, {
-                    opacity: 0, x: -40, duration: 0.7, stagger: 0.15,
+                    x: -40, duration: 0.7, stagger: 0.15,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.timeline', start: 'top 75%', toggleActions: 'play none none none' }
@@ -221,7 +221,7 @@
             var eduEls = gsap.utils.toArray('.education-card');
             if (eduEls.length > 0) {
                 gsap.from(eduEls, {
-                    opacity: 0, y: 40, duration: 0.6, stagger: 0.1,
+                    y: 40, duration: 0.6, stagger: 0.1,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.education-grid', start: 'top 80%', toggleActions: 'play none none none' }
@@ -232,7 +232,7 @@
             var certEls = gsap.utils.toArray('.cert-card');
             if (certEls.length > 0) {
                 gsap.from(certEls, {
-                    opacity: 0, y: 40, duration: 0.6, stagger: 0.1,
+                    y: 40, duration: 0.6, stagger: 0.1,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.certs-grid', start: 'top 80%', toggleActions: 'play none none none' }
@@ -243,7 +243,7 @@
             var projectEls = gsap.utils.toArray('.project-card');
             if (projectEls.length > 0) {
                 gsap.from(projectEls, {
-                    opacity: 0, y: 40, duration: 0.7, stagger: 0.1,
+                    y: 40, duration: 0.7, stagger: 0.1,
                     ease: 'power2.out', scale: 0.98,
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '#projects .section-header', start: 'top 80%', toggleActions: 'play none none none' }
@@ -254,7 +254,7 @@
             var contactEls = gsap.utils.toArray('.contact-item');
             if (contactEls.length > 0) {
                 gsap.from(contactEls, {
-                    opacity: 0, x: -30, duration: 0.6, stagger: 0.12,
+                    x: -30, duration: 0.6, stagger: 0.12,
                     ease: 'power2.out',
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.contact-info', start: 'top 80%', toggleActions: 'play none none none' }
@@ -265,7 +265,7 @@
             var forms = gsap.utils.toArray('.contact-form input, .contact-form textarea');
             if (forms.length > 0) {
                 gsap.from(forms, {
-                    opacity: 0, y: 20, duration: 0.5, stagger: 0.1,
+                    y: 20, duration: 0.5, stagger: 0.1,
                     ease: 'power2.out',
                     willChange: 'transform, opacity',
                     scrollTrigger: { trigger: '.contact-form', start: 'top 90%', toggleActions: 'play none none none' }
@@ -292,11 +292,11 @@
     function initHeroAnimations() {
         try {
             if (typeof gsap === 'undefined') return;
-            gsap.from('.hero-eyebrow', { opacity: 0, y: 40, duration: 0.8, ease: 'power3.out', delay: 0.2 });
-            gsap.from('.hero-title', { opacity: 0, y: 50, duration: 0.9, ease: 'power3.out', delay: 0.4 });
-            gsap.from('.hero-subtitle', { opacity: 0, y: 30, duration: 0.7, ease: 'power2.out', delay: 0.65 });
-            gsap.from('.hero-cta-group', { opacity: 0, y: 30, duration: 0.7, ease: 'power2.out', delay: 0.85 });
-            gsap.from('.hero-scroll-indicator', { opacity: 0, y: 20, duration: 0.5, ease: 'power2.out', delay: 1.1 });
+            gsap.from('.hero-eyebrow', { y: 40, duration: 0.8, ease: 'power3.out', delay: 0.2 });
+            gsap.from('.hero-title', { y: 50, duration: 0.9, ease: 'power3.out', delay: 0.4 });
+            gsap.from('.hero-subtitle', { y: 30, duration: 0.7, ease: 'power2.out', delay: 0.65 });
+            gsap.from('.hero-cta-group', { y: 30, duration: 0.7, ease: 'power2.out', delay: 0.85 });
+            gsap.from('.hero-scroll-indicator', { y: 20, duration: 0.5, ease: 'power2.out', delay: 1.1 });
         } catch(e) {}
     }
 
@@ -402,7 +402,7 @@
             var revealSections = document.querySelectorAll('.reveal-section');
             revealSections.forEach(function(section) {
                 gsap.from(section, {
-                    opacity: 0,
+
                     y: 60,
                     duration: 1,
                     ease: 'power3.out',
@@ -491,5 +491,6 @@
         } catch(e) {}
     })();
             setTimeout(function() { document.querySelectorAll(".stagger-children").forEach(function(el) { el.classList.add("visible"); }); }, 2000);
+            setTimeout(function() { document.querySelectorAll(".reveal-section").forEach(function(el) { el.classList.add("revealed"); }); document.querySelectorAll(".section-heading, .section-label, .section-description").forEach(function(el) { el.style.cssText = "opacity: 1 !important; visibility: visible !important;"; }); }, 3000);
 
 })();
