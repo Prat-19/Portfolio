@@ -2,9 +2,10 @@
 <html lang="en" data-theme="light">
 <head>
     <style>/* CSS-only fallback: hide loader, show text */
-        #loader { display: none !important; }
+        #loader { display: flex; }
         html.js-enabled #loader { display: flex; }
     </style>
+    <link rel="stylesheet" href="css/style.css">
     <script>(function(){document.documentElement.classList.add("js-enabled");var l=document.getElementById("loader");if(l)setTimeout(function(){l.classList.add("hidden");},3000);})();</script>
 
     <meta charset="UTF-8">
