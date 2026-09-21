@@ -3,9 +3,9 @@
 <head>
     <style>/* CSS-only fallback: hide loader, show text */
         #loader { display: none !important; }
-        html.js-enabled #loader { display: flex !important; }
+        html.js-enabled #loader { display: flex; }
     </style>
-    <script>(function(){document.documentElement.classList.add("js-enabled");var l=document.getElementById("loader");if(l)setTimeout(function(){l.style.display="none";l.style.visibility="hidden";l.style.opacity="0";},3000);})();</script>
+    <script>(function(){document.documentElement.classList.add("js-enabled");var l=document.getElementById("loader");if(l)setTimeout(function(){l.classList.add("hidden");},3000);})();</script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -224,4 +224,3 @@
 
 <div class="cursor" id="cursor"></div><div class="cursor-dot" id="cursorDot"></div>
 <script src="js/main.js"></script>
-</body></html><!-- rebuilt: 1789981993 -->
