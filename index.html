@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-    <style>/* CSS-only fallback: hide loader, show text if JS fails */
+    <style>/* CSS-only fallback: hide loader, show text */
         #loader { display: none !important; }
-        .reveal-section { opacity: 1 !important; transform: none !important; }
-        .stagger-children > * { opacity: 1 !important; transform: none !important; }
         html.js-enabled #loader { display: flex !important; }
-        html.js-enabled .reveal-section { opacity: 0 !important; }
-        html.js-enabled .reveal-section.revealed { opacity: 1 !important; }
-        html.js-enabled .stagger-children > * { opacity: 0 !important; }
-        html.js-enabled .stagger-children.visible > * { opacity: 1 !important; }
     </style>
     <script>(function(){document.documentElement.classList.add("js-enabled");var l=document.getElementById("loader");if(l)setTimeout(function(){l.style.display="none";l.style.visibility="hidden";l.style.opacity="0";},3000);})();</script>
-    <link rel="stylesheet" href="css/style.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
